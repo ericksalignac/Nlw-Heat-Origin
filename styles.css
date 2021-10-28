@@ -36,6 +36,7 @@ main {
   object-fit: cover;
   clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
 }
+
 .avatar span {
   position: absolute;
   top: -15px;
