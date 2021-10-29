@@ -18,14 +18,20 @@
           <span>
             <img src="images/selo.svg" alt="Selo branco Rocketseat" />
           </span>
-          <img src="/images/foto-perfil.png" alt="Foto de perfl" />
+
+          <img src="" alt="Foto de perfl" id="userImage" />
         </div>
+
         <h1 id="userName">UserName</h1>
-        <a href="https://github.com" target="_blank">
-          <img src="images/github 2.svg" alt="ícone github" /> ericksalignac
+
+        <a id="userLink" href="https://github.com/maykbrito" target="_blank">
+          <img src="images/github 2.svg" alt="ícone github" id />
+          <span id="userLogin">userlogin</span>
         </a>
 
-        <p>An instructor focused on helping pople start programming for web</p>
+        <p id="userBio">
+          An instructor focused on helping pople start programming for web
+        </p>
 
         <ul id="socialLinks">
           <li class="youtube">
@@ -58,23 +64,6 @@
       </div>
     </main>
 
-    <script>
-      const socialMediaLinks = {
-        name: 'Erick Rocha',
-        github: 'ericksalignac',
-        youtube: 'channel/UC5JtcmUBXbG4SDaTxDwE_Jg',
-        instagram: 'erick_salignac',
-        facebook: '/profile.php?id=100005985194717',
-        twitter: 'erick_salignac'
-      }
-
-      function changeSocialMedia() {
-        for (let li of socialLinks.children) {
-          const social = li.getAttribute('class')
-          li.children[0].href = `https://${social}.com/${socialMediaLinks[social]}`
-        }
-      }
-      changeSocialMedia()
-    </script>
+    <script src="/main.js"></script>
   </body>
 </html>
